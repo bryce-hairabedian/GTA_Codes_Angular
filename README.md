@@ -1,1 +1,3 @@
-# GTA_Codes_Angular
+# GTA Code Library
+
+##GTA Codes built with Agular to be used with PhoneGap
