@@ -1,0 +1,13 @@
+
+***Priority 1
+1. FAB Toolbar Menu - Top of the app {J}
+2. Style the search & list containers: {J}
+        -constrict view to certain width (<50%) on comp screen and 100% on 
+3. Build "category" (weapons, world, player, vehicle) list items: {B}
+        -make sticky to top
+
+***Priority 2
+4. Style list times: {J & B}
+        -image, text, code
+              # for code, use icons as buttons. Possible to color icons based on cooresponding console. 
+        
