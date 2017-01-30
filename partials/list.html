@@ -1,4 +1,5 @@
 <section class="artistpage">
+<!-- Start Search area -->
   <div class="search">
     <h1>Artist Directory</h1>
     <label>search: </label>
@@ -19,8 +20,38 @@
       <input type="radio" ng-model="direction" name="direction" value="reverse">
       descending
     </label>
-   
   </div>
+<!-- end search area -->
+
+<!-- Start Code Container -->
+<div class="md-content">
+  <div flex>
+    <div class="codeType">
+
+        <md-toolbar layout="row" class="">
+          <div class="md-toolbar-tools">
+            <span>ToolBar Text: Code Type?</span>
+          </div>
+        </md-toolbar>
+
+        <md-content>
+          <md-list flex>
+            <md-subheader class="md-no-sticky"> 3 line item with hover</md-subheader>
+            <md-list-item class="md-3-line" ng-repeat="code in GunCodes" ng-click="null">
+              <div class="md-list-item-text" layout="column">
+                <h3></h3>
+                <h4></h4>
+                <p></p>
+              </div>
+            </md-list-item>
+          </md-list>
+        </md-content>
+
+    </div>
+  </div>
+</div>
+<!-- End Code Container -->
+
   <ul class="artistlist">
     <li class="artist cf" ng-repeat="item in artists | filter: query | orderBy: artistOrder:direction">
       <a href="#/details/{{artists.indexOf(item)}}">
@@ -31,5 +62,5 @@
         </div>
       </a>
     </li>
-  </ul>  
+  </ul>
 </section>
